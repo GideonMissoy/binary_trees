@@ -29,6 +29,19 @@ typedef struct binary_tree_s avl_t;
 typedef struct binary_tree_s heap_t;
 
 /**
+ * struct_link_s - structure for advanced tasks
+ * @n: depth of node specified
+ * @node: node of tree to store
+ * @next: next node of the linked list
+ */
+typedef struct link_s
+{
+	size_t n;
+	struct binary_tree_s const *node;
+	struct link_s *next;
+} link_t;
+
+/**
  * struct levelorder_queue_s - Level order traversal queue.
  * @node: A node of a binary tree.
  * @next: The next node to traverse to in the binary tree.
